@@ -2,6 +2,7 @@
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+	#mce-GUESTS-HELPERTEXT{display: none;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
@@ -28,12 +29,12 @@
 </div>
 <div class="mc-field-group size1of2">
 	<label for="mce-GUESTS">Number of Guests </label>
-	<input type="number" name="GUESTS" class="" value="" id="mce-GUESTS">
+	<input type="number" name="GUESTS" class="recquired" value="" id="mce-GUESTS">
 	<span id="mce-GUESTS-HELPERTEXT" class="helper_text"></span>
 </div>
 <div class="mc-field-group size1of2">
 	<label for="mce-PHONE">Phone Number </label>
-	<input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+	<input type="text" name="PHONE" class="recquired" value="" id="mce-PHONE">
 	<span id="mce-PHONE-HELPERTEXT" class="helper_text"></span>
 </div>
 <div class="mc-field-group">
@@ -57,8 +58,21 @@
 	<span id="mce-ZIPCODE-HELPERTEXT" class="helper_text"></span>
 </div>
 <div class="mc-field-group">
+	<label for="mce-FLYING">Flying Experience </label>
+	<select name="FLYING" class="recquired" id="mce-FLYING">
+	<option value=""></option>
+	<option value="Not Yet A Pilot">Not Yet A Pilot</option>
+<option value="Student Pilot">Student Pilot</option>
+<option value="Private Pilot">Private Pilot</option>
+<option value="Commercial Pilot">Commercial Pilot</option>
+<option value="ATP">ATP</option>
+
+	</select>
+	<span id="mce-FLYING-HELPERTEXT" class="helper_text"></span>
+</div>
+<div class="mc-field-group">
 	<label for="mce-ACCESS">Aircraft Access </label>
-	<select name="ACCESS" class="" id="mce-ACCESS">
+	<select name="ACCESS" class="recquired" id="mce-ACCESS">
 	<option value=""></option>
 	<option value="I have previously owned an aircraft">I have previously owned an aircraft</option>
 <option value="I currently own an aircraft share">I currently own an aircraft share</option>
@@ -167,19 +181,6 @@
 	</select>
 	<span id="mce-HOURS-HELPERTEXT" class="helper_text"></span>
 </div>
-<div class="mc-field-group">
-	<label for="mce-FLYING">Flying Experience </label>
-	<select name="FLYING" class="" id="mce-FLYING">
-	<option value=""></option>
-	<option value="Not Yet A Pilot">Not Yet A Pilot</option>
-<option value="Student Pilot">Student Pilot</option>
-<option value="Private Pilot">Private Pilot</option>
-<option value="Commercial Pilot">Commercial Pilot</option>
-<option value="ATP">ATP</option>
-
-	</select>
-	<span id="mce-FLYING-HELPERTEXT" class="helper_text"></span>
-</div>
 <div class="mc-field-group input-group">
     <strong>Locations I will be attending </strong>
     <ul><li>
@@ -234,5 +235,5 @@
     </div>
 </form>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='GUESTS';ftypes[5]='number';fnames[3]='PHONE';ftypes[3]='phone';fnames[4]='STREET';ftypes[4]='text';fnames[6]='CITY';ftypes[6]='text';fnames[7]='STATE';ftypes[7]='text';fnames[8]='ZIPCODE';ftypes[8]='text';fnames[9]='FLYING';ftypes[9]='dropdown';fnames[10]='HOURS';ftypes[10]='dropdown';fnames[11]='ACCESS';ftypes[11]='dropdown';fnames[12]='MEDICAL';ftypes[12]='dropdown';fnames[13]='MANU';ftypes[13]='text';fnames[14]='PURCHASE';ftypes[14]='dropdown';fnames[16]='OWNERSHIP';ftypes[16]='dropdown';fnames[17]='FLYEVENT';ftypes[17]='dropdown';fnames[18]='HEARABOUT';ftypes[18]='dropdown';fnames[15]='MMERGE15';ftypes[15]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='GUESTS';ftypes[5]='number';fnames[3]='PHONE';ftypes[3]='phone';fnames[4]='STREET';ftypes[4]='text';fnames[6]='CITY';ftypes[6]='text';fnames[7]='STATE';ftypes[7]='text';fnames[8]='ZIPCODE';ftypes[8]='text';fnames[19]='FLYING';ftypes[19]='dropdown';fnames[10]='HOURS';ftypes[10]='dropdown';fnames[11]='ACCESS';ftypes[11]='dropdown';fnames[12]='MEDICAL';ftypes[12]='dropdown';fnames[13]='MANU';ftypes[13]='text';fnames[14]='PURCHASE';ftypes[14]='dropdown';fnames[16]='OWNERSHIP';ftypes[16]='dropdown';fnames[17]='FLYEVENT';ftypes[17]='dropdown';fnames[18]='HEARABOUT';ftypes[18]='dropdown';fnames[15]='MMERGE15';ftypes[15]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
